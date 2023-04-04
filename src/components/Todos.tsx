@@ -12,6 +12,8 @@ interface TodoData {
 
 export function Todos() {
   const [todos, setTodos] = useState<TodoData[]>([]);
+  const createdTasks = todos.length;
+  const completedTasks = todos.filter((todo) => todo.isChecked === true).length;
 
   function handleAddTodo(task: string) {
     const newTodo = {
@@ -48,11 +50,13 @@ export function Todos() {
         <header>
           <div>
             Tarefas criadas
-            <span className={styles.counter}>0</span>
+            <span className={styles.counter}>{createdTasks}</span>
           </div>
           <div>
             Concluídas
-            <span className={styles.counter}>0</span>
+            <span className={styles.counter}>
+              {completedTasks} de {createdTasks}
+            </span>
           </div>
         </header>
         <ul className={styles.content}>

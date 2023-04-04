@@ -27,8 +27,16 @@
   color: var(--blue);
 }
 
+.todos header div:first-child span {
+  color: var(--gray-100);
+}
+
 .todos header div:nth-child(2) {
   color: var(--purple);
+}
+
+.todos header div:nth-child(2) span {
+  color: var(--gray-100);
 }
 
 .content {
