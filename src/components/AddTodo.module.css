@@ -12,7 +12,33 @@
 .addTodo input {
   display: block;
   width: 100%;
+  padding: 1rem;
+  color: var(--gray-100);
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: none;
+}
+
+.addTodo input::placeholder {
+  color: var(--gray-300);
 }
 
 .addTodo button {
+  max-width: 5.625;
+  padding: 1rem;
+  background: var(--blue-dark);
+  border-radius: 8px;
+  color: var(--gray-100);
+  font-weight: 700;
+  border: none;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addTodo button:hover {
+  background: var(--blue);
 }

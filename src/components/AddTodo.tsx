@@ -1,3 +1,4 @@
+import { PlusCircle } from '@phosphor-icons/react';
 import styles from './AddTodo.module.css';
 
 export function AddTodo() {
@@ -5,10 +6,12 @@ export function AddTodo() {
     <div className={styles.addTodo}>
       <input
         type="text"
-        placeholder="Adicionar novo todo"
+        placeholder="Adicione uma nova tarefa"
         className="todo-input"
       />
-      <button>Criar</button>
+      <button>
+        Criar <PlusCircle size={24} weight="bold" />
+      </button>
     </div>
   );
 }
