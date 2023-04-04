@@ -1,0 +1,65 @@
+.todoCard {
+  padding: 1rem;
+  background: var(--gray-500);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+.todoCard + .todoCard {
+  margin-top: 0.75rem;
+}
+
+.todoCard div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.todoCard p {
+  color: var(--gray-100);
+}
+
+.todoCard p.checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.todoCard button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.circleIcon {
+  color: var(--blue);
+}
+
+.checkedIcon {
+  position: relative;
+  color: var(--purple-dark);
+}
+
+.checkedIcon:hover {
+  color: var(--purple);
+}
+
+.trashIcon {
+  color: var(--gray-300);
+  padding: 5px;
+  border-radius: 4px;
+  height: calc(24px + 10px);
+  width: calc(24px + 10px);
+}
+
+.trashIcon:hover {
+  color: var(--danger);
+  background: var(--gray-400);
+}

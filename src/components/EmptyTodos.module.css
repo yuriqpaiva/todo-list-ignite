@@ -1,0 +1,22 @@
+.emptyTodos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1.5rem;
+}
+
+.emptyTodos svg {
+  color: var(--gray-400);
+  margin-bottom: 1rem;
+}
+
+.emptyTodos > p {
+  text-align: center;
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+.emptyTodos > p strong {
+  font-weight: bold;
+  display: block;
+}

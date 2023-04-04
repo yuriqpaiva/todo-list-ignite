@@ -1,0 +1,44 @@
+.todos {
+  margin-top: 4rem;
+}
+
+.todos > header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.todos header > div {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.todos header > div .counter {
+  display: inline-block;
+  margin-left: 0.5rem;
+
+  background: var(--gray-400);
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+}
+
+.todos header div:first-child {
+  color: var(--blue);
+}
+
+.todos header div:nth-child(2) {
+  color: var(--purple);
+}
+
+.content {
+  margin-top: 1.5rem;
+  border-top: 1px solid #333333;
+  border-radius: 8px;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
