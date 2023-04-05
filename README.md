@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="./src/assets/rocket.svg" alt="Logo Next Level Week Return" width="100px"/>
+  <img src="./public/rocket.svg" alt="Logo Next Level Week Return" width="100px"/>
 </p>
 
-<p align="center" style="font-weight:bold; font-size:24px;">TODO List</p>
+<p align="center"><strong style="font-size: 24px;">TODO List</strong></p>
+
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/yuriqpaiva/todo-list-ignite?color=blue">
