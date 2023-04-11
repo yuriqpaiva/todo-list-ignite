@@ -10,6 +10,7 @@
   width: 100%;
 
   border-radius: 8px;
+  height: auto;
 }
 
 .todoCard + .todoCard {
@@ -24,6 +25,9 @@
 
 .todoCard p {
   color: var(--gray-100);
+  word-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.4;
 }
 
 .todoCard p.checked {
